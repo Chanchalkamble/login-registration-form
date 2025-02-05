@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background:linear-gradient( to right ,#DA498D, #69247C);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+
+
+    }
+    .container{
+        background-color: #75208d;
+        height:450px;
+        width:300px;
+        padding: 20px 30px;
+        line-height: 50px;
+        box-shadow:  2px 2px 5px #9f29bf;
+        
+    }
+    input{
+        padding: 5px 25px;
+        font-size: 20px;
+        outline: none;
+    }
+    /* #ck{
+        padding: 60%;
+        font-size: xx-large;
+        width: 200px;
+    } */
+
+    input[type=checkbox]{
+        width:20px;
+        height: 20px;
+        font-size: x-large;
+        
+    }
+    span{
+        font-size: x-large;
+        color: white;
+    }
+    button{
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px 70px;
+        font-size: 20px;
+        position: absolute;
+        left:43%
+    }
+    .login{
+        color:white;
+        font-size: 25px;
+        position:fixed;
+        top:400px;
+        left:800px;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Registration form</h2>
+        <form action="/register" method="POST">
+        <input type="text" placeholder="First name" id="firstname" name="firstname" required><br>
+        <input type="text" placeholder="Last name" id="lastname"  name="lastname" required><br>
+        <input type="text" placeholder="Email" id="email"  name="email"  required><br>
+        <input type="text" placeholder="Password" id="password" name="password" required><br>
+        <input type="checkbox" id="ck" required><span>Agree</span><br>
+        <input type="checkbox"  required><span>Continue</span><br>
+        <button type="submit">Register</button>
+    </form>
+    <a  class="login" href="/loginform.html">Login</a>
+    </div>
+</body>
+</html>

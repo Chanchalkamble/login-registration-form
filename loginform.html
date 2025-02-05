@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient( to left,#7C444F, #9F5255);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:90vh
+        }
+        .container{
+            background-color: #E16A54;
+            height:400px;
+            width:400px;
+            padding:10px 10px;
+            line-height: 80px;
+            box-shadow: 2px 2px 20px black;
+        }
+        input{
+            font-size: 20px;
+            position: fixed;
+            left:41%;
+            padding:10px 
+        }
+        h1{
+            text-align: center;
+        }
+        input[type=checkbox]{
+        width:20px;
+        height: 20px;
+        left:600px
+        }
+        span{
+            font-size: 20px;
+            position: fixed;
+            left:630px;
+            top:54%
+        }
+        
+        button{
+            padding:10px 20px;
+            font-size: 20px;
+            border: none;
+            background-color: green;
+            color:white;
+            position: absolute;
+            top:65%;
+            left:47%;
+        }
+        .register{
+        position: fixed;
+        left:790px;
+        top:54%;
+        font-size: 20px;
+        color:black
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login page</h1>
+        <form action="/login" method="POST">
+        <input type="text" placeholder="Email" id="email" name="email" required><br>
+        <input type="text" placeholder="Password" id="password" name="password" required><br>
+        <input type="checkbox" required><span>Remember</span><br>
+        <button type="submit">Login</button>
+    </form>
+    <a href="/myform.html" class="register">Register Now</a>
+    </div>
+</body>
+</html>
